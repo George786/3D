@@ -66,6 +66,7 @@
         "models/machin.glb",
         function (gltf) {
           const model = gltf.scene;
+          model.scale.set(20, 20, 20); // Adjust scale here
           model.position.set(0, 0, 0);
 
           scene.add(model);
